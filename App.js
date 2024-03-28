@@ -13,11 +13,11 @@ const App = () => {
   return (
     <NavigationContainer>
         <Stack.Navigator initialRouteName='Home'>
-            <Stack.Screen name='Home' component={CHome} />
-            <Stack.Screen name='Manawa' component={Manawa}/>
-            <Stack.Screen name='marketplace' component={MarketPlace}/>
-            <Stack.Screen name='Login' component={Login}/>
-            <Stack.Screen name='Signup' component={Signup}/>
+            <Stack.Screen name='Home' component={CHome} options={{ title: "My Home", headerTitleStyle: { fontWeight: 'bold' }, headerStyle:{ backgroundColor: "#DE9F42" }, headerTintColor: "#fff", headerTitleStyle: { fontWeight: 10 } }}  />
+            <Stack.Screen name='Manawa' component={Manawa} options={{ title: "Mes MANAWA"}}/>
+            <Stack.Screen name='marketplace' component={MarketPlace} options={{ title: "Marketplace"}}/>
+            <Stack.Screen name='Login' component={Login} options={{ title: "Login"}}/>
+            <Stack.Screen name='Signup' component={Signup} options={{ title: "Signup"}}/>
         </Stack.Navigator>
     </NavigationContainer>
   )
