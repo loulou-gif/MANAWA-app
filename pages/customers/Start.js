@@ -19,7 +19,7 @@ const Start = () => {
             <View style={{backgroundColor: '#47300D', width: 50, height: 90, borderTopRightRadius:150, marginTop:-10, borderBottomRightRadius:100, marginLeft:-18 }}></View>
             {/* <View style={{backgroundColor: '#47300D', width: 300, height: 220,borderTopRightRadius:200, marginTop:-10, borderBottomRightRadius:100 }}></View> */}
             <View style={{width: "auto", height: 53, alignItems: "flex-end", margin: 30, marginTop: -80, }}>
-                <Button title="COMMENCER          " color="#DE9F42" />
+                <Button title="COMMENCER " color="#DE9F42" />
             </View>
         </ImageBackground>
       </View>
