@@ -23,7 +23,7 @@ const Otpconnexion = ({navigation}) => {
             {/* <PhoneInput placeholder='' />             */}
           </View>
           <View style={styles.input}>
-            <Button title="SUIVANT" color="#DE9F42" onPress={() => navigation.navigate("Home")} />
+            <Button title="SUIVANT" color="#DE9F42" onPress={() => navigation.navigate("Manawa")} />
           </View>
         </View>
           
