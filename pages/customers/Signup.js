@@ -1,5 +1,6 @@
-import { View, Text,StyleSheet, Button, ImageBackground } from 'react-native'
+import { View, Text,StyleSheet, Button, ImageBackground, TextInput } from 'react-native'
 import React from 'react'
+import PhoneInput from 'react-native-phone-number-input';
 
 const Signup = ({navigation}) => {
   const image = require("../../assets/images/background/second.png");
@@ -13,6 +14,17 @@ const Signup = ({navigation}) => {
         <View style={styles.display}>
           <Text style={styles.p}>Eos suscipit nostrum in temporibus dolores ut natus saepe.</Text>
         </View>
+        <View style={styles.display}  >
+          <View style={styles.input}>
+            <TextInput style={styles.inputs} placeholder='Nom de famille'/>
+            <TextInput style={styles.inputs}  placeholder='Prénoms'/>
+            <PhoneInput placeholder='' />            
+          </View>
+          <View style={styles.input}>
+            <Button title="SUIVANT" color="#DE9F42" />
+          </View>
+        </View>
+          
       </ImageBackground>
     </View>
   )
@@ -51,6 +63,25 @@ const styles = StyleSheet.create({
   display:{
     alignItems:"center",
     // height:30,
+  },
+  input:{
+    // borderWidth:1,
+    width:330,
+    height:50,
+    // backgroundColor: "#E5E5E5",
+    marginTop: 130,
+    borderRadius: 8,
+    marginBottom:10,
+  },
+  inputs:{
+    // borderWidth:1,
+    width:330,
+    height:50,
+    backgroundColor: "#fff",
+    // marginTop: 150,
+    // borderRadius: 8,
+    marginBottom:10,
+    paddingLeft: 20
   }
 
 })
