@@ -21,7 +21,7 @@ const Signup = ({navigation}) => {
             <PhoneInput placeholder='' />            
           </View>
           <View style={styles.input}>
-            <Button title="SUIVANT" color="#DE9F42" />
+            <Button title="SUIVANT" color="#DE9F42" onPress={() => navigation.navigate("Otpconnexion")} />
           </View>
         </View>
           

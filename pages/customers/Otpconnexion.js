@@ -2,27 +2,28 @@ import { View, Text,StyleSheet, Button, ImageBackground, TextInput } from 'react
 import React from 'react'
 import PhoneInput from 'react-native-phone-number-input';
 
-const Login = ({navigation}) => {
+const Otpconnexion = ({navigation}) => {
   const image = require("../../assets/images/background/third.png");
   return (
     <View style={{}}>
       <ImageBackground source={image} style={{ width:"auto", height:800}} resizeMode="cover">
         <View style={styles.display} >
           <View style={styles.header}>
-          {/* <Text style={styles.inscriptionColor}>Inscription |</Text> */}
-          <Text style={styles.inscriptionColor}>Connexion</Text></View>
+          <Text style={styles.inscriptionColor}>Connexion</Text>
+          {/* <Text style={styles.connexionColor}>Connexion</Text> */}
+          </View>
         </View>
         <View style={styles.display}>
           <Text style={styles.p}>Eos suscipit nostrum in temporibus dolores ut natus saepe.</Text>
         </View>
         <View style={styles.display}  >
           <View style={styles.input}>
-            {/* <TextInput style={styles.inputs} placeholder='OTP CODE'/> */}
+            <TextInput style={styles.inputs} placeholder='OTP CODE'/>
             {/* <TextInput style={styles.inputs}  placeholder='Prénoms'/> */}
-            <PhoneInput placeholder='' />            
+            {/* <PhoneInput placeholder='' />             */}
           </View>
           <View style={styles.input}>
-            <Button title="SUIVANT" color="#DE9F42" onPress={() => navigation.navigate("Otpconnexion")} />
+            <Button title="SUIVANT" color="#DE9F42" onPress={() => navigation.navigate("Home")} />
           </View>
         </View>
           
@@ -58,7 +59,7 @@ const styles = StyleSheet.create({
     height:37,
     textAlign:"center",
     fontSize:16,
-    color:"#E5E5E5",
+    color:"#4E4E4E",
     marginTop:10,
   },
   display:{
@@ -78,7 +79,7 @@ const styles = StyleSheet.create({
     // borderWidth:1,
     width:330,
     height:50,
-    backgroundColor: "#fff",
+    backgroundColor: "#E5E5E5",
     // marginTop: 150,
     // borderRadius: 8,
     // marginBottom:10,
@@ -89,4 +90,4 @@ const styles = StyleSheet.create({
 })
 
 
-export default Login
+export default Otpconnexion

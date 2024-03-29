@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import CHome from './pages/customers/Home.js'
 import Manawa from './pages/customers/Manawa.js'
 import Start from './pages/customers/Start.js'
+import Otpconnexion from './pages/customers/Otpconnexion.js'
 import Signup from './pages/customers/Signup.js'
 import Login from './pages/customers/Login.js'
 import MarketPlace from './pages/customers/MarketPlace.js'
@@ -21,6 +22,7 @@ const App = () => {
             <Stack.Screen name='Login' component={Login} options={{ title: "Login"}}/>
             <Stack.Screen name='Signup' component={Signup} options={{ title: "Signup"}}/>
             <Stack.Screen name='Start' component={Start} options={{ title: "Start"}}/>
+            <Stack.Screen name='Otpconnexion' component={Otpconnexion} options={{ title: "Otpconnexion"}}/>
         </Stack.Navigator>
     </NavigationContainer>
   )
