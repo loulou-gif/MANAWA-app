@@ -9,8 +9,9 @@ const Login = ({navigation}) => {
       <ImageBackground source={image} style={{ width:"auto", height:800}} resizeMode="cover">
         <View style={styles.display} >
           <View style={styles.header}>
-          {/* <Text style={styles.inscriptionColor}>Inscription |</Text> */}
-          <Text style={styles.inscriptionColor}>Connexion</Text></View>
+          <Text onPress={() => navigation.navigate("Login")} style={styles.connexionColor}>Connexion |</Text>
+          <Text onPress={() => navigation.navigate("Signup")} style={styles.inscriptionColor}>Inscription</Text>
+          </View>
         </View>
         <View style={styles.display}>
           <Text style={styles.p}>Eos suscipit nostrum in temporibus dolores ut natus saepe.</Text>
@@ -37,12 +38,12 @@ const styles = StyleSheet.create({
     fontWeight:"bold",
   },
   inscriptionColor:{
-    color: "#FFA012",
+    color: "#4E4E4E",
     fontSize: 26,
     fontWeight:"bold",
   },
   connexionColor:{
-    color: "#FFFFFF",
+    color: "#FFA012",
     fontSize: 26,
     fontWeight:"bold",
   },

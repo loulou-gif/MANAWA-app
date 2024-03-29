@@ -9,7 +9,7 @@ const Signup = ({navigation}) => {
       <ImageBackground source={image} style={{ width:"auto", height:800}} resizeMode="cover">
         <View style={styles.display} >
           <View style={styles.header}>
-          <Text style={styles.inscriptionColor}>Inscription |</Text><Text style={styles.connexionColor}>Connexion</Text></View>
+          <Text onPress={() => navigation.navigate("Signup")} style={styles.inscriptionColor}>Inscription |</Text><Text onPress={() => navigation.navigate("Login")} style={styles.connexionColor}>Connexion</Text></View>
         </View>
         <View style={styles.display}>
           <Text style={styles.p}>Eos suscipit nostrum in temporibus dolores ut natus saepe.</Text>
