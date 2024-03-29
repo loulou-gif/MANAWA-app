@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     height:37,
     textAlign:"center",
     fontSize:16,
-    color:"#E5E5E5",
+    color:"#4E4E4E",
     marginTop:10,
   },
   display:{
