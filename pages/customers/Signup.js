@@ -6,10 +6,11 @@ const Signup = ({navigation}) => {
   return (
     <View style={{}}>
       <ImageBackground source={image} style={{ width:"auto", height:800}} resizeMode="cover">
-        <View style={styles.header}>
-          <Text style={styles.inscriptionColor}>Inscription |</Text><Text style={styles.connexionColor}>Connexion</Text>
+        <View style={styles.display} >
+          <View style={styles.header}>
+          <Text style={styles.inscriptionColor}>Inscription |</Text><Text style={styles.connexionColor}>Connexion</Text></View>
         </View>
-        <View>
+        <View style={styles.display}>
           <Text style={styles.p}>Eos suscipit nostrum in temporibus dolores ut natus saepe.</Text>
         </View>
       </ImageBackground>
@@ -34,15 +35,22 @@ const styles = StyleSheet.create({
   },
   header:{
     marginTop: 80,
-    alignContent:"center",
     justifyContent:"space-around",
     flexDirection:"row",
     width:290,
     height:30,
   },
   p:{
-    width:290,
-    height:30
+    width:272,
+    height:37,
+    textAlign:"center",
+    fontSize:16,
+    color:"#E5E5E5",
+    marginTop:10,
+  },
+  display:{
+    alignItems:"center",
+    // height:30,
   }
 
 })
