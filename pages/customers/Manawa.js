@@ -4,6 +4,9 @@ import React from 'react'
 const Manawa = ({navigation}) => {
   return (
     <View>
+      <View style={styles.header}>
+          <Text style={styles.logo}>MANAWA</Text>
+      </View>
       <View style={styles.centre} >
         <TextInput style={styles.input} placeholder='Recherche ...' />
       </View>
@@ -22,6 +25,19 @@ const styles = StyleSheet.create({
   centre:{
     alignItems:"center",
     marginTop: 50,
+  },
+  header:{
+    marginTop:30,
+    backgroundColor:"#DE9F42",
+    height:47
+  },
+  logo:{
+    color:"#fff",
+    marginLeft:20,
+    fontStyle: "italic",
+    fontWeight:"bold",
+    fontSize:20,
+    marginTop: 10
   }
 })
 
