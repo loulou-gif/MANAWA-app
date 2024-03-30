@@ -6,7 +6,7 @@ const Login = ({navigation}) => {
   const image = require("../../assets/images/background/third.png");
   return (
     <View style={{}}>
-      <ImageBackground source={image} style={{ width:"auto", height:800}} resizeMode="cover">
+      <ImageBackground source={image} style={{ width:"auto", height:900}} resizeMode="cover">
         <View style={styles.display} >
           <View style={styles.header}>
           <Text onPress={() => navigation.navigate("Login")} style={styles.connexionColor}>Connexion |</Text>
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     fontWeight:"bold",
   },
   header:{
-    marginTop: 80,
+    marginTop: 150,
     justifyContent:"space-around",
     flexDirection:"row",
     width:290,

@@ -6,7 +6,7 @@ const Otpconnexion = ({navigation}) => {
   const image = require("../../assets/images/background/third.png");
   return (
     <View style={{}}>
-      <ImageBackground source={image} style={{ width:"auto", height:800}} resizeMode="cover">
+      <ImageBackground source={image} style={{ width:"auto", height:900}} resizeMode="cover">
         <View style={styles.display} >
           <View style={styles.header}>
           <Text style={styles.inscriptionColor}>Connexion</Text>
@@ -48,14 +48,14 @@ const styles = StyleSheet.create({
     fontWeight:"bold",
   },
   header:{
-    marginTop: 80,
+    marginTop: 150,
     justifyContent:"space-around",
     flexDirection:"row",
     width:290,
     height:30,
   },
   p:{
-    width:272,
+    width:260,
     height:37,
     textAlign:"center",
     fontSize:16,
