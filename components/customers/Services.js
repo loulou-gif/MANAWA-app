@@ -7,13 +7,12 @@ const Services = () => {
     <View>
       <View style={styles.center} >
         {services.map((data) =>(
-          <ImageBackground key={data.id}  style={styles.Card} source={require(data.image)}>
+          <ImageBackground key={data.id}  style={styles.Card} source={data.image}>
               <View style={styles.titleBox} >
                   <Text style={styles.title} >{data.name}</Text>
               </View>
           </ImageBackground>
         ))}
-        
       </View>
     </View>
   )

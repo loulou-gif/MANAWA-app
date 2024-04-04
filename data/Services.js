@@ -3,27 +3,27 @@
 export const services = [
     {
         id:1,
-        image:"../assets/images/servicesBackgrounds/menuisier.jpg",
+        image:require("../assets/images/servicesBackgrounds/menuisier.jpg"),
         name:"Menuisier", 
     },
     {
         id:2,
-        image:"../assets/images/servicesBackgrounds/barbershop.jpg",
+        image:require("../assets/images/servicesBackgrounds/babershop.jpg"),
         name:"Barber", 
     },
     {
         id:3,
-        image:"../assets/images/servicesBackgrounds/plombier.jpg",
+        image:require("../assets/images/servicesBackgrounds/plombier.jpg"),
         name:"Plomber", 
     },
     {
         id:4,
-        image:"../assets/images/servicesBackgrounds/jardinier.jpg",
+        image:require("../assets/images/servicesBackgrounds/jardinier.jpg"),
         name:"Jardinier", 
     },
     {
         id:5,
-        image:"../assets/images/servicesBackgrounds/maquilliage.jpg",
+        image:require("../assets/images/servicesBackgrounds/maquillage.jpg"),
         name:"Make Up", 
     },
 ]
