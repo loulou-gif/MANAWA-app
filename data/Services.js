@@ -8,14 +8,15 @@ export const services = [
     },
     {
         id:2,
-        image:require("../assets/images/servicesBackgrounds/babershop.jpg"),
-        name:"Barber", 
+        image:require("../assets/images/servicesBackgrounds/plombier.jpg"),
+        name:"Plomber",
     },
     {
         id:3,
-        image:require("../assets/images/servicesBackgrounds/plombier.jpg"),
-        name:"Plomber", 
+        image:require("../assets/images/servicesBackgrounds/babershop.jpg"),
+        name:"Barber", 
     },
+    
     {
         id:4,
         image:require("../assets/images/servicesBackgrounds/jardinier.jpg"),
