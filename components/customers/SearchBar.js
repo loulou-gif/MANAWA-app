@@ -5,6 +5,7 @@ const SearchBar = ({navigation}) => {
   return (
     <View style={styles.centre} >
         <TextInput style={styles.input} placeholder='Recherche...' />
+        {/* <Button onPress={() => navigation.push("Owner")} title="prestataire"/> */}
     </View>
   )
 }

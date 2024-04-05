@@ -9,7 +9,7 @@ const Services = ({navigation}) => {
         {services.map((data) =>(
           <ImageBackground key={data.id}  style={styles.Card} source={data.image}>
               <View style={styles.titleBox}>
-                  <Text onPress={() => navigation.push("Owner")} style={styles.title} >{data.name}</Text>
+                  <Text  style={styles.title} >{data.name}</Text>
               </View>
           </ImageBackground>
         ))}
