@@ -7,7 +7,7 @@ const MarketPlace = ({navigation}) => {
       <Text>MarketPlace</Text>
       <Button title="Home" color="red"onPress={() => navigation.push('Home')} />
       <Button title="Login" onPress={() => navigation.push('Login')} />
-      <Button title="Manawa" color="green" onPress={() => navigation.push('Manawa')} />
+      <Button title="Owner" color="green" onPress={() => navigation.push('Owner')} />
       <Button title="Signup" color="black" onPress={() => navigation.push('Signup')} />
     </View>
   )

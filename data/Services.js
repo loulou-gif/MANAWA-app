@@ -15,6 +15,7 @@ export const services = [
         id:3,
         image:require("../assets/images/servicesBackgrounds/babershop.jpg"),
         name:"Barber", 
+  
     },
     
     {
@@ -26,5 +27,6 @@ export const services = [
         id:5,
         image:require("../assets/images/servicesBackgrounds/maquillage.jpg"),
         name:"Make Up", 
+ 
     },
 ]

@@ -1,7 +1,7 @@
-import { View, TextInput, StyleSheet } from 'react-native'
+import { View, TextInput, StyleSheet,Button } from 'react-native'
 import React from 'react'
 
-const SearchBar = () => {
+const SearchBar = ({navigation}) => {
   return (
     <View style={styles.centre} >
         <TextInput style={styles.input} placeholder='Recherche...' />
