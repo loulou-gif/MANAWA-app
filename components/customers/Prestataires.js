@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const bottumMenu = () => {
+const Prestataires = () => {
   return (
     <View>
-      <Text>bottumMenu</Text>
+      
     </View>
   )
 }
 
-export default bottumMenu
+export default Prestataires

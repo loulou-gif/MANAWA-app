@@ -9,6 +9,7 @@ import Otpconnexion from './pages/customers/Otpconnexion.js'
 import Signup from './pages/customers/Signup.js'
 import Login from './pages/customers/Login.js'
 import MarketPlace from './pages/customers/MarketPlace.js'
+import Owner from './pages/customers/Owner.js'
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
             <Stack.Screen name='Signup' component={Signup} options={{ title: "Signup"}}/>
             <Stack.Screen name='Start' component={Start} options={{ title: "Start"}}/>
             <Stack.Screen name='Otpconnexion' component={Otpconnexion} options={{ title: "Otpconnexion"}}/>
+            <Stack.Screen name='Owner' component={Owner} options={{ title: "Owner"}}/>
         </Stack.Navigator>
     </NavigationContainer>
   )

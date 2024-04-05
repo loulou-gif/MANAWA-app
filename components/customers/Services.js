@@ -2,13 +2,13 @@ import { View, Text, StyleSheet, ImageBackground } from 'react-native'
 import React from 'react'
 import { services } from '../../data/services'
 
-const Services = () => {
+const Services = ({navigation}) => {
   return (
     <View>
       <View style={styles.center} >
         {services.map((data) =>(
           <ImageBackground key={data.id}  style={styles.Card} source={data.image}>
-              <View style={styles.titleBox} >
+              <View style={styles.titleBox}>
                   <Text style={styles.title} >{data.name}</Text>
               </View>
           </ImageBackground>
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     borderRadius:8,
     shadowColor:"black",
     boxShadow:20,
-    backgroundColor:'black',
+    // backgroundColor:'black',
     resizeMode:"cover",
     marginTop:20,
     // alignContent:"center",
