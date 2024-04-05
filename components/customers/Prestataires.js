@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   },
   textBox:{
     margin:10,
-    marginBottom:20,
+    marginBottom:15,
   },
   box:{
     marginTop:50

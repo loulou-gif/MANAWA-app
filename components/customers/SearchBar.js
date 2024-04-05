@@ -11,17 +11,17 @@ const SearchBar = ({navigation}) => {
 }
 const styles = StyleSheet.create({
     input:{
-      width: 300,
+      width: 350,
       height:50,
       paddingLeft: 30,
       borderRadius:8,
       borderStyle: "solid",
       borderColor: 'gray',
-      borderWidth:1
+      borderBottomWidth:1
     },
     centre:{
       alignItems:"center",
-      marginTop: 50,
+      marginTop: 30,
     }
   })
 
