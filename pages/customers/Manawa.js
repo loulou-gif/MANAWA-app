@@ -4,7 +4,7 @@ import Header from '../../components/customers/Header.js'
 import SearchBar from '../../components/customers/SearchBar.js'
 import Services from '../../components/customers/Services.js'
 import Tabmenu from '../../components/customers/Tabmenu.js'
-const Manawa = ({navigation}) => {
+const Manawa = () => {
   return (
     <View>
       <Header/>
