@@ -1,17 +1,19 @@
-import { View, Text, Image, StyleSheet, ImageBackground } from 'react-native'
+import { View, Text, Image, StyleSheet, ImageBackground, Pressable } from 'react-native'
 import React from 'react'
 import { Store } from '../../data/Store.js'
-const Prestataires = () => {
+const Prestataires = ({navigation}) => {
   return (
     <View style={styles.box} >
         {Store.map((data) => (
-          <View style={styles.flex} key={data.id}>
-            <Image style={styles.imageSize} source={data.profil}/>
-            <View style={styles.textBox} >
-              <Text style={styles.Title}>{data.title} </Text>
-              <Text style={styles.details}>{data.description} </Text>
-            </View>
-        </View>
+          <Pressable onPress={ () => navigation.push('Prestataire')}>
+            <View style={styles.flex} key={data.id}>
+              <Image style={styles.imageSize} source={data.profil}/>
+              <View style={styles.textBox} >
+                <Text style={styles.Title}>{data.title} </Text>
+                <Text style={styles.details}>{data.description} </Text>
+              </View>
+          </View>
+        </Pressable>
         ))}
     </View>
   )
