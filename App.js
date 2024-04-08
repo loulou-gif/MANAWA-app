@@ -11,6 +11,7 @@ import Login from './pages/customers/Login.js'
 import MarketPlace from './pages/customers/MarketPlace.js'
 import Owner from './pages/customers/Owner.js'
 import Cost from './pages/customers/Cost.js'
+import Booking from './pages/customers/Booking.js'
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
             <Stack.Screen name='Otpconnexion' component={Otpconnexion} options={{ title: "Otpconnexion"}}/>
             <Stack.Screen name='Owner' component={Owner} options={{ title: "Owner"}}/>
             <Stack.Screen name='Cost' component={Cost} options={{ title: "Cost"}}/>
+            <Stack.Screen name='Booking' component={Booking} options={{ title: "Booking"}}/>
         </Stack.Navigator>
     </NavigationContainer>
   )

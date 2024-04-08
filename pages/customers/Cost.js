@@ -19,7 +19,9 @@ const Cost = ({navigation}) => {
             </View>
             <View>
               <Text style={styles.price}>{data.price}</Text>
-              <Pressable style={styles.bouton} onPress={() => navigation.navigate("")}><Text style={styles.value} >Réservation</Text></Pressable>
+              <Pressable style={styles.bouton} onPress={() => navigation.push("Booking")}>
+                <Text style={styles.value} >Réservation</Text>
+              </Pressable>
             </View>
           </View>
         </View>
@@ -64,6 +66,7 @@ const styles = StyleSheet.create({
   value:{
     textAlign:"center",
     color:"#fff",
+    fontSize:9
   },
   flex:{
     flexDirection: "row",
