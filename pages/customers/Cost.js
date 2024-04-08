@@ -35,6 +35,8 @@ const styles = StyleSheet.create({
     borderColor:"#ABA9A9",
     flexDirection: "row",
     flexWrap:"wrap",
+    marginTop:10,
+    paddingBottom:10
   },
   title:{
     fontSize:16,
@@ -42,7 +44,7 @@ const styles = StyleSheet.create({
   },
   text:{
     color:"#ABA9A9",
-    fontSize:9
+    fontSize:11
   },
   bouton:{
     backgroundColor:'#47300D',
@@ -66,9 +68,10 @@ const styles = StyleSheet.create({
   flex:{
     flexDirection: "row",
     flexWrap:"wrap",
-    justifyContent:"space-evenly",
+    justifyContent:"space-between",
     marginLeft: 20,
-    marginRight:20
+    marginRight:20,
+    width: 300
   }
 })
 

@@ -3,7 +3,7 @@ import React from 'react'
 import Header from '../../components/customers/Header.js'
 import SearchBar from '../../components/customers/SearchBar.js'
 // import Services from '../../components/customers/Services.js'
-import Tabmenu from '../../components/customers/Tabmenu.js'
+// import Tabmenu from '../../components/customers/Tabmenu.js'
 import { services } from '../../data/services'
 const Manawa = ({navigation}) => {
   return (
@@ -21,7 +21,7 @@ const Manawa = ({navigation}) => {
           </ImageBackground>
         ))}
       </View>
-      <Tabmenu/>
+      {/* <Tabmenu/> */}
     </View>
   )
 }

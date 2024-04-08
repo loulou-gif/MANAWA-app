@@ -19,7 +19,7 @@ export const product = [
         id:3,
         name:"Teinture",
         description:"Une légère teinture de couleur",
-        price:"2500",
+        price:"2500 XOF",
         reservation:"",
         image: require("../assets/images/Profils/p8.png"),
     },
