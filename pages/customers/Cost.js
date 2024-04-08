@@ -1,7 +1,7 @@
 import { View, Text, Pressable, Image, StyleSheet } from 'react-native'
 import React from 'react'
 import  Header  from '../../components/customers/Header'
-import SearchBar from '../../components/customers/SearchBar'
+// import SearchBar from '../../components/customers/SearchBar'
 import StoreHeader from '../../components/customers/StoreHeader'
 import { product } from '../../data/Product'
 const Cost = ({navigation}) => {
@@ -17,8 +17,8 @@ const Cost = ({navigation}) => {
               <Text style={styles.title}>{data.name} </Text>
               <Text style={styles.text}>{data.description}</Text>
             </View>
-            <View>
-              <Text style={styles.price}>{data.price}</Text>
+            <View style={styles.space} >
+              <Text  style={styles.price}>{data.price}</Text>
               <Pressable style={styles.bouton} onPress={() => navigation.push("booking")}>
                 <Text style={styles.value} >Réserver</Text>
               </Pressable>
@@ -80,6 +80,9 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     marginRight:20,
     width: 280
+  },
+  space:{
+    justifyContent:"space-evenly",
   }
 })
 

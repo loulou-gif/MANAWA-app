@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     flex:{
         flexDirection: "row",
         justifyContent:"space-evenly",
-        width:300,
+        width:250,
         marginTop:15,
         marginBottom:5,
     },
