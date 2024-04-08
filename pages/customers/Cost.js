@@ -1,19 +1,75 @@
-import { View, Text } from 'react-native'
+import { View, Text, Pressable, Image, StyleSheet } from 'react-native'
 import React from 'react'
 import  Header  from '../../components/customers/Header'
 import SearchBar from '../../components/customers/SearchBar'
 import StoreHeader from '../../components/customers/StoreHeader'
-
-const Cost = () => {
+import { product } from '../../data/Product'
+const Cost = ({navigation}) => {
   return (
     <View>
       <Header/>
       <StoreHeader />
-      <View>
-        
-      </View>
+      {product.map((data)=> (
+        <View key={data.id} style={styles.Card} >
+          <Image style={styles.image} source={data.image}/>
+          <View style={styles.flex} >
+            <View >
+              <Text style={styles.title}>{data.name} </Text>
+              <Text style={styles.text}>{data.description}</Text>
+            </View>
+            <View>
+              <Text style={styles.price}>{data.price}</Text>
+              <Pressable style={styles.bouton} onPress={() => navigation.navigate("")}><Text style={styles.value} >Réservation</Text></Pressable>
+            </View>
+          </View>
+        </View>
+      ))}
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  Card:{
+    marginTop:5,
+    borderBottomWidth:1,
+    borderColor:"#ABA9A9",
+    flexDirection: "row",
+    flexWrap:"wrap",
+  },
+  title:{
+    fontSize:16,
+    fontWeight:"400",
+  },
+  text:{
+    color:"#ABA9A9",
+    fontSize:9
+  },
+  bouton:{
+    backgroundColor:'#47300D',
+    width:100,
+    height:20,
+    color:"#fff",
+    borderRadius:8,
+    textAlign:"center"
+  },
+  price:{
+    color:"#47300D",
+    fontSize:16
+  },
+  image:{
+    marginLeft: 20,
+  },
+  value:{
+    textAlign:"center",
+    color:"#fff",
+  },
+  flex:{
+    flexDirection: "row",
+    flexWrap:"wrap",
+    justifyContent:"space-evenly",
+    marginLeft: 20,
+    marginRight:20
+  }
+})
 
 export default Cost
