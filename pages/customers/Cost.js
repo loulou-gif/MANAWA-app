@@ -19,14 +19,13 @@ const Cost = ({navigation}) => {
             </View>
             <View>
               <Text style={styles.price}>{data.price}</Text>
-              <Pressable style={styles.bouton} onPress={() => navigation.push("Booking")}>
+              <Pressable style={styles.bouton} onPress={() => navigation.push("booking")}>
                 <Text style={styles.value} >Réserver</Text>
               </Pressable>
             </View>
           </View>
         </View>
       ))}
-      <Pressable onPress={() => navigation.push("booking")}><Text>Pressable test</Text></Pressable>
     </View>
   )
 }
