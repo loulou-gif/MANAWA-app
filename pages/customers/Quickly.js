@@ -3,21 +3,21 @@ import React from 'react'
 import Header from '../../components/customers/Header'
 import DatePicker from 'react-native-date-picker'
 
-const Booking = ({navigation}) => {
+const Quickly = ({navigation}) => {
   return (
     <View>
       <Header/>
-      <Image style={styles.image} source={require('../../assets/images/Profils/p10.jpg')}/>
+      <Image style={styles.image} source={require('../../assets/images/Profils/p11.jpg')}/>
       <View style={styles.center} >
         <View style={styles.flex} >
-            <Text style={styles.activeText} >Réservation</Text>
-            <Text style={styles.text} onPress={() => navigation.push('quickly')}>Instantanée</Text>
+            <Text style={styles.text} onPress={() => navigation.push('booking')}>Réservation</Text>
+            <Text style={styles.activeText}>Instantanée</Text>
         </View>
         <View style={styles.bloc} >
-            <TextInput style={styles.day} placeholder='JJ/MM/AAAA' editable={false} selectTextOnFocus={false}  />
+            <TextInput style={styles.day} placeholder='JJ/MM/AAAA' />
             <View style={styles.flex} >
-                <TextInput style={styles.hour} placeholder='-- / --' editable={false} selectTextOnFocus={false}  />
-                <TextInput style={styles.hour} placeholder='-- / --' editable={false} selectTextOnFocus={false}  />
+                <TextInput style={styles.hour} placeholder='-- / --' />
+                <TextInput style={styles.hour} placeholder='-- / --' />
             </View>
             <TextInput style={styles.day} placeholder='Service(s)' />
             <TextInput style={styles.day} placeholder='Coût totale' />
@@ -95,4 +95,4 @@ const styles= StyleSheet.create({
     }
 })
 
-export default Booking
+export default Quickly
