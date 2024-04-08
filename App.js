@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react'
 import {NavigationContainer} from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import CHome from './pages/customers/Home.js'
+// import CHome from './pages/customers/Home.js'
 import Manawa from './pages/customers/Manawa.js'
 import Start from './pages/customers/Start.js'
 import Otpconnexion from './pages/customers/Otpconnexion.js'
@@ -19,7 +19,7 @@ const App = () => {
   return (
     <NavigationContainer>
         <Stack.Navigator initialRouteName='Start' screenOptions={{headerShown: false}}>
-            <Stack.Screen name='Home' component={CHome} options={{ title: "My Home" }} />
+            {/* <Stack.Screen name='Home' component={CHome} options={{ title: "My Home" }} /> */}
             <Stack.Screen name='Manawa' component={Manawa} options={{ title: "Mes MANAWA"}}/>
             <Stack.Screen name='marketplace' component={MarketPlace} options={{ title: "Marketplace"}}/>
             <Stack.Screen name='Login' component={Login} options={{ title: "Login"}}/>
@@ -28,7 +28,7 @@ const App = () => {
             <Stack.Screen name='Otpconnexion' component={Otpconnexion} options={{ title: "Otpconnexion"}}/>
             <Stack.Screen name='Owner' component={Owner} options={{ title: "Owner"}}/>
             <Stack.Screen name='Cost' component={Cost} options={{ title: "Cost"}}/>
-            <Stack.Screen name='Booking' component={Booking} options={{ title: "Booking"}}/>
+            <Stack.Screen name='booking' component={Booking} />
         </Stack.Navigator>
     </NavigationContainer>
   )

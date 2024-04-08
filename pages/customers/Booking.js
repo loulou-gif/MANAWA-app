@@ -6,7 +6,6 @@ const Booking = () => {
   return (
     <View>
       <Header/>
-      <Booking/>
     </View>
   )
 }

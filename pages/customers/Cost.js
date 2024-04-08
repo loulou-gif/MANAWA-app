@@ -26,6 +26,7 @@ const Cost = ({navigation}) => {
           </View>
         </View>
       ))}
+      <Pressable onPress={() => navigation.push("booking")}><Text>Pressable test</Text></Pressable>
     </View>
   )
 }
