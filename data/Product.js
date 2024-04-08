@@ -13,14 +13,14 @@ export const product = [
         description:"Une coiffure simple femme",
         price:"10.500 XOF",
         reservation:"",
-        image: require("../assets/images/Profils/p8.png"),
+        image: require("../assets/images/Profils/p3.jpg"),
     },
     {
         id:3,
-        name:"Teinture",
+        name:"Maquillage",
         description:"Une légère teinture de couleur",
         price:"2500 XOF",
         reservation:"",
-        image: require("../assets/images/Profils/p8.png"),
+        image: require("../assets/images/Profils/p7.jpg"),
     },
 ]

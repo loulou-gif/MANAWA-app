@@ -41,12 +41,13 @@ const styles = StyleSheet.create({
     paddingBottom:10
   },
   title:{
-    fontSize:16,
+    fontSize:18,
     fontWeight:"400",
   },
   text:{
     color:"#ABA9A9",
-    fontSize:11
+    fontSize:12,
+    width:150
   },
   bouton:{
     backgroundColor:'#47300D',
@@ -62,7 +63,10 @@ const styles = StyleSheet.create({
     fontSize:16
   },
   image:{
-    marginLeft: 20,
+    height:70,
+    width:70,
+    borderRadius:8,
+    marginLeft:20
   },
   value:{
     textAlign:"center",
@@ -75,7 +79,7 @@ const styles = StyleSheet.create({
     justifyContent:"space-between",
     marginLeft: 20,
     marginRight:20,
-    width: 300
+    width: 280
   }
 })
 
