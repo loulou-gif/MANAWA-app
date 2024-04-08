@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, ImageBackground } from 'react-native'
 import React from 'react'
 import { services } from '../../data/services'
 
-const Services = ({navigation}) => {
+const Services = () => {
   return (
     <View>
       <View style={styles.center} >
