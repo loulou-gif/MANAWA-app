@@ -2,6 +2,7 @@ import { View, Text, TextInput,StyleSheet, Image, Pressable } from 'react-native
 import React from 'react'
 import Header from '../../components/customers/Header'
 import DatePicker from 'react-native-date-picker'
+import Panier from './Panier'
 
 const Booking = ({navigation}) => {
   return (
@@ -21,7 +22,7 @@ const Booking = ({navigation}) => {
             </View>
             <TextInput style={styles.day} placeholder='Service(s)' />
             <TextInput style={styles.day} placeholder='Coût totale' />
-            <Pressable style={styles.bouton} >
+            <Pressable style={styles.bouton} onPress={() => navigation.push('panier')} >
                 <Text style={styles.value} >Ajouter au panier</Text>
             </Pressable>
         </View>
