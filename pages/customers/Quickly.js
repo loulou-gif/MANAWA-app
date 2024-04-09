@@ -15,10 +15,10 @@ const Quickly = ({navigation}) => {
             <Text style={styles.activeText}>Instantanée</Text>
         </View>
         <View style={styles.bloc} >
-            <TextInput style={styles.day} placeholder='JJ/MM/AAAA' />
+            <TextInput style={styles.day} placeholder='JJ/MM/AAAA' editable={false} selectTextOnFocus={false}  />
             <View style={styles.flex} >
-                <TextInput style={styles.hour} placeholder='-- / --' />
-                <TextInput style={styles.hour} placeholder='-- / --' />
+                <TextInput style={styles.hour} placeholder='-- / --' editable={false} selectTextOnFocus={false}  />
+                <TextInput style={styles.hour} placeholder='-- / --' editable={false} selectTextOnFocus={false}  />
             </View>
             <TextInput style={styles.day} placeholder='Service(s)' />
             <TextInput style={styles.day} placeholder='Coût totale' />

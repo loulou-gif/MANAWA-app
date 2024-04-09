@@ -15,9 +15,9 @@ const Booking = ({navigation}) => {
             <Text style={styles.text} onPress={() => navigation.push('quickly')}>Instantanée</Text>
         </View>
         <View style={styles.bloc} >
-            <TextInput style={styles.day} placeholder='JJ/MM/AAAA' editable={false} selectTextOnFocus={false}  />
+            <TextInput style={styles.day} placeholder='JJ/MM/AAAA'  />
             <View style={styles.flex} >
-                <TextInput style={styles.hour} placeholder='-- / --' editable={false} selectTextOnFocus={false}  />
+                <TextInput style={styles.hour} placeholder='-- / --'  />
                 <TextInput style={styles.hour} placeholder='-- / --' editable={false} selectTextOnFocus={false}  />
             </View>
             <TextInput style={styles.day} placeholder='Service(s)' />
