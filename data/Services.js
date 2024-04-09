@@ -37,13 +37,13 @@ export const services = [
     },
     {
         id:7,
-        image:require("../assets/images/servicesBackgrounds/maquillage.jpg"),
+        image:require("../assets/images/servicesBackgrounds/menuisier.jpg"),
         name:"Make Up", 
  
     },
     {
         id:8,
-        image:require("../assets/images/servicesBackgrounds/maquillage.jpg"),
+        image:require("../assets/images/servicesBackgrounds/babershop.jpg"),
         name:"Make Up", 
  
     },
@@ -55,19 +55,19 @@ export const services = [
     },
     {
         id:10,
-        image:require("../assets/images/servicesBackgrounds/maquillage.jpg"),
+        image:require("../assets/images/servicesBackgrounds/jardinier.jpg"),
         name:"Make Up", 
  
     },
     {
         id:11,
-        image:require("../assets/images/servicesBackgrounds/maquillage.jpg"),
+        image:require("../assets/images/servicesBackgrounds/babershop.jpg"),
         name:"Make Up", 
  
     },
     {
         id:12,
-        image:require("../assets/images/servicesBackgrounds/maquillage.jpg"),
+        image:require("../assets/images/servicesBackgrounds/jardinier.jpg"),
         name:"Make Up", 
  
     },
