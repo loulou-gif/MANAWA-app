@@ -1,4 +1,4 @@
-import { View, Text, Pressable, Image, StyleSheet } from 'react-native'
+import { View, Text, Pressable, Image, StyleSheet, ScrollView } from 'react-native'
 import React from 'react'
 import  Header  from '../../components/customers/Header'
 // import SearchBar from '../../components/customers/SearchBar'
@@ -6,7 +6,7 @@ import StoreHeader from '../../components/customers/StoreHeader'
 import { product } from '../../data/Product'
 const Cost = ({navigation}) => {
   return (
-    <View>
+    <ScrollView>
       <Header/>
       <StoreHeader />
       {product.map((data)=> (
@@ -26,7 +26,7 @@ const Cost = ({navigation}) => {
           </View>
         </View>
       ))}
-    </View>
+    </ScrollView>
   )
 }
 

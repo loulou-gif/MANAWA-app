@@ -13,13 +13,17 @@ import Owner from './pages/customers/Owner.js'
 import Cost from './pages/customers/Cost.js'
 import Booking from './pages/customers/Booking.js'
 import quickly from './pages/customers/Quickly.js'
+import Panier from './pages/customers/Panier.js'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+// import Parametres from './pages/customers/Parametres.js';
 
 
 const App = () => {
   const Stack = createNativeStackNavigator()
+  const Tab = createBottomTabNavigator();
   return (
     <NavigationContainer>
-        <Stack.Navigator initialRouteName='Start' screenOptions={{headerShown: false}}>
+        <Stack.Navigator initialRouteName='Manawa' screenOptions={{headerShown: false}}>
             {/* <Stack.Screen name='Home' component={CHome} options={{ title: "My Home" }} /> */}
             <Stack.Screen name='Manawa' component={Manawa} options={{ title: "Mes MANAWA"}}/>
             <Stack.Screen name='marketplace' component={MarketPlace} options={{ title: "Marketplace"}}/>
@@ -31,8 +35,10 @@ const App = () => {
             <Stack.Screen name='Cost' component={Cost} options={{ title: "Cost"}}/>
             <Stack.Screen name='booking' component={Booking} />
             <Stack.Screen name='quickly' component={quickly} />
+            <Stack.Screen name='panier' component={Panier} />
         </Stack.Navigator>
     </NavigationContainer>
+    
   )
 }
 

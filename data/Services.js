@@ -29,4 +29,46 @@ export const services = [
         name:"Make Up", 
  
     },
+    {
+        id:6,
+        image:require("../assets/images/servicesBackgrounds/deco.jpg"),
+        name:"Make Up", 
+ 
+    },
+    {
+        id:7,
+        image:require("../assets/images/servicesBackgrounds/maquillage.jpg"),
+        name:"Make Up", 
+ 
+    },
+    {
+        id:8,
+        image:require("../assets/images/servicesBackgrounds/maquillage.jpg"),
+        name:"Make Up", 
+ 
+    },
+    {
+        id:9,
+        image:require("../assets/images/servicesBackgrounds/maquillage.jpg"),
+        name:"Make Up", 
+ 
+    },
+    {
+        id:10,
+        image:require("../assets/images/servicesBackgrounds/maquillage.jpg"),
+        name:"Make Up", 
+ 
+    },
+    {
+        id:11,
+        image:require("../assets/images/servicesBackgrounds/maquillage.jpg"),
+        name:"Make Up", 
+ 
+    },
+    {
+        id:12,
+        image:require("../assets/images/servicesBackgrounds/maquillage.jpg"),
+        name:"Make Up", 
+ 
+    },
 ]

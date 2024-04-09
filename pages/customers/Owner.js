@@ -2,14 +2,14 @@
 // import React from 'react'
 import Header from '../../components/customers/Header'
 import SearchBar from '../../components/customers/SearchBar'
-import { View, Text, Image, StyleSheet, Pressable } from 'react-native'
+import { View, Text, Image, StyleSheet, Pressable, ScrollView } from 'react-native'
 import React from 'react'
 import { Store } from '../../data/Store.js'
 // import Prestataires from '../../components/customers/Prestataires'
 
 const Owner = ({navigation}) => {
   return (
-    <View>
+    <ScrollView>
       <Header/>
       <SearchBar/>
       <View style={styles.box}>
@@ -25,7 +25,7 @@ const Owner = ({navigation}) => {
         </Pressable>
         ))}
       </View>
-    </View>
+    </ScrollView>
   )
 }
 

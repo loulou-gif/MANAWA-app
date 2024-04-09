@@ -23,4 +23,22 @@ export const Store = [
         description:'Soin cheveux, visage cheveux, visage cheveux, visage cheveux, visage cheveux, visage cheveux, visage ...',
         profil:require('../assets/images/Profils/p3.jpg')
     },
+    {
+        id:5,
+        title:"Salon de beauté",
+        description:'Soin cheveux, visage cheveux, visage cheveux, visage cheveux, visage cheveux, visage cheveux, visage ...',
+        profil:require('../assets/images/Profils/p5.jpg')
+    },
+    {
+        id:6,
+        title:"Salon de beauté",
+        description:'Soin cheveux, visage cheveux, visage cheveux, visage cheveux, visage cheveux, visage cheveux, visage ...',
+        profil:require('../assets/images/Profils/p6.jpg')
+    },
+    {
+        id:7,
+        title:"Salon de beauté",
+        description:'Soin cheveux, visage cheveux, visage cheveux, visage cheveux, visage cheveux, visage cheveux, visage ...',
+        profil:require('../assets/images/Profils/p7.jpg')
+    },
 ]
