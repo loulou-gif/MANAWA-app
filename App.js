@@ -14,6 +14,7 @@ import Cost from './pages/customers/Cost.js'
 import Booking from './pages/customers/Booking.js'
 import quickly from './pages/customers/Quickly.js'
 import Panier from './pages/customers/Panier.js'
+import Feedback from './pages/customers/Feedback.js'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 // import Parametres from './pages/customers/Parametres.js';
 
@@ -36,6 +37,7 @@ const App = () => {
             <Stack.Screen name='booking' component={Booking} />
             <Stack.Screen name='quickly' component={quickly} />
             <Stack.Screen name='panier' component={Panier} />
+            <Stack.Screen name='Feedback' component={Feedback} />
         </Stack.Navigator>
     </NavigationContainer>
     
