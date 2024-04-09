@@ -44,6 +44,7 @@ const styles= StyleSheet.create({
         borderRadius:8,
         marginTop:5,
         marginBottom:10,
+        backgroundColor:"#E5E5E5"
     },
     hour:{
         textAlign:"center",
@@ -53,6 +54,7 @@ const styles= StyleSheet.create({
         height:50,
         borderRadius:8,
         marginBottom:10,
+        backgroundColor:"#E5E5E5"
     },
     flex:{
         flexDirection:"row",
