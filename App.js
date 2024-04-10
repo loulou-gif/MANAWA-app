@@ -16,6 +16,7 @@ import quickly from './pages/customers/Quickly.js'
 import Panier from './pages/customers/Panier.js'
 import Feedback from './pages/customers/Feedback.js'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import BottomTabs from './routes/BottomTabs.js';
 // import Parametres from './pages/customers/Parametres.js';
 
 
@@ -25,19 +26,19 @@ const App = () => {
   return (
     <NavigationContainer>
         <Stack.Navigator initialRouteName='Manawa' screenOptions={{headerShown: false}}>
-            {/* <Stack.Screen name='Home' component={CHome} options={{ title: "My Home" }} /> */}
-            <Stack.Screen name='Manawa' component={Manawa} options={{ title: "Mes MANAWA"}}/>
-            <Stack.Screen name='marketplace' component={MarketPlace} options={{ title: "Marketplace"}}/>
-            <Stack.Screen name='Login' component={Login} options={{ title: "Login"}}/>
-            <Stack.Screen name='Signup' component={Signup} options={{ title: "Signup"}}/>
-            <Stack.Screen name='Start' component={Start} options={{ title: "Start"}}/>
-            <Stack.Screen name='Otpconnexion' component={Otpconnexion} options={{ title: "Otpconnexion"}}/>
-            <Stack.Screen name='Owner' component={Owner} options={{ title: "Owner"}}/>
-            <Stack.Screen name='Cost' component={Cost} options={{ title: "Cost"}}/>
+            <Stack.Screen name='tabs' component={BottomTabs}  />
+            {/* <Stack.Screen name='Manawa' component={Manawa} />
+            <Stack.Screen name='marketplace' component={MarketPlace} />
+            <Stack.Screen name='Login' component={Login} />
+            <Stack.Screen name='Signup' component={Signup} />
+            <Stack.Screen name='Start' component={Start} />
+            <Stack.Screen name='Otpconnexion' component={Otpconnexion} />
+            <Stack.Screen name='Owner' component={Owner} />
+            <Stack.Screen name='Cost' component={Cost}/>
             <Stack.Screen name='booking' component={Booking} />
             <Stack.Screen name='quickly' component={quickly} />
             <Stack.Screen name='panier' component={Panier} />
-            <Stack.Screen name='Feedback' component={Feedback} />
+            <Stack.Screen name='Feedback' component={Feedback} /> */}
         </Stack.Navigator>
     </NavigationContainer>
     
