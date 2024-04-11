@@ -20,8 +20,8 @@ const Quickly = ({navigation}) => {
                 <TextInput style={styles.hour} placeholder='-- / --' editable={false} selectTextOnFocus={false}  />
                 <TextInput style={styles.hour} placeholder='-- / --' editable={false} selectTextOnFocus={false}  />
             </View>
-            <TextInput style={styles.day} placeholder='Service(s)' />
-            <TextInput style={styles.day} placeholder='Coût totale' />
+            <TextInput style={styles.input} placeholder='Service(s)' />
+            <TextInput style={styles.input} placeholder='Coût totale' />
             <Pressable style={styles.bouton} onPress={() => navigation.push('panier')}>
                 <Text style={styles.value} >Ajouter au panier</Text>
             </Pressable>
@@ -45,6 +45,17 @@ const styles= StyleSheet.create({
         marginTop:5,
         marginBottom:10,
         backgroundColor:"#E5E5E5"
+    },
+    input:{
+        textAlign:"center",
+        borderWidth:1,
+        borderColor:'#ABA9A9',
+        width:250,
+        height:50,
+        borderRadius:8,
+        marginTop:5,
+        marginBottom:10,
+        backgroundColor:"#fff"
     },
     hour:{
         textAlign:"center",
