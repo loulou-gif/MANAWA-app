@@ -3,10 +3,13 @@ import React from 'react';
 import Header from '../../components/customers/Header.js';
 import SearchBar from '../../components/customers/SearchBar.js';
 import { services } from '../../data/services';
-import {useNavigation} from '@react-navigation/native'
+
 
 const Manawa = ({ navigation }) => {
-  const nav = useNavigation()
+
+  // const goToPrestatairesList = (serviceId, nameService) =>{
+  //   navigation.navigate("Owner", {serviceId, nameService})
+  // }
   return (
     <ScrollView>
       
@@ -15,7 +18,7 @@ const Manawa = ({ navigation }) => {
         <View style={styles.center}>
           {services.map((data) => (
             <ImageBackground key={data.id} style={styles.Card} source={data.image}>
-              <Pressable onPress={() => navigation.navigate("Owner")}>
+              <Pressable onPress={ ()=> navigation.navigate('Owner', {id: data.id})}>
                 <View style={styles.titleBox}>
                   <Text style={styles.title}>{data.name}</Text>
                 </View>
