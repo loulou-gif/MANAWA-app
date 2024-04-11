@@ -27,7 +27,7 @@ const App = () => {
     <NavigationContainer>
         <Stack.Navigator initialRouteName='Manawa' screenOptions={{headerShown: false}}>
             <Stack.Screen name='tabs' component={BottomTabs}  />
-            {/* <Stack.Screen name='Manawa' component={Manawa} />
+            <Stack.Screen name='Manawa' component={Manawa} />
             <Stack.Screen name='marketplace' component={MarketPlace} />
             <Stack.Screen name='Login' component={Login} />
             <Stack.Screen name='Signup' component={Signup} />
@@ -38,7 +38,7 @@ const App = () => {
             <Stack.Screen name='booking' component={Booking} />
             <Stack.Screen name='quickly' component={quickly} />
             <Stack.Screen name='panier' component={Panier} />
-            <Stack.Screen name='Feedback' component={Feedback} /> */}
+            <Stack.Screen name='Feedback' component={Feedback} />
         </Stack.Navigator>
     </NavigationContainer>
     
