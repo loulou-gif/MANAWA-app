@@ -17,6 +17,7 @@ import Panier from './pages/customers/Panier.js'
 import Feedback from './pages/customers/Feedback.js'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import BottomTabs from './routes/BottomTabs.js';
+import NavMain from './routes/NavMain.js';
 // import Parametres from './pages/customers/Parametres.js';
 
 
@@ -27,7 +28,8 @@ const App = () => {
     <NavigationContainer>
         <Stack.Navigator initialRouteName='Manawa' screenOptions={{headerShown: false}}>
             <Stack.Screen name='tabs' component={BottomTabs}  />
-            <Stack.Screen name='Manawa' component={Manawa} />
+            <Stack.Screen name='Navmain' component={NavMain} />
+            {/* <Stack.Screen name='Manawa' component={Manawa} /> */}
             <Stack.Screen name='marketplace' component={MarketPlace} />
             <Stack.Screen name='Login' component={Login} />
             <Stack.Screen name='Signup' component={Signup} />

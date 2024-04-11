@@ -3,8 +3,10 @@ import React from 'react';
 import Header from '../../components/customers/Header.js';
 import SearchBar from '../../components/customers/SearchBar.js';
 import { services } from '../../data/services';
+import {useNavigation} from '@react-navigation/native'
 
 const Manawa = ({ navigation }) => {
+  const nav = useNavigation()
   return (
     <ScrollView>
       
