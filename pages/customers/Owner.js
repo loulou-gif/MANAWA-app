@@ -1,66 +1,66 @@
-// import { View, Text } from 'react-native'
-// import React from 'react'
-import Header from '../../components/customers/Header'
-import SearchBar from '../../components/customers/SearchBar'
-import { View, Text, Image, StyleSheet, Pressable, ScrollView } from 'react-native'
-import React from 'react'
-import { Store } from '../../data/Store.js'
-// import Prestataires from '../../components/customers/Prestataires'
+// Owner.js
+import React from 'react';
+import { View, Text, Image, StyleSheet, Pressable, ScrollView } from 'react-native';
+import Header from '../../components/customers/Header';
+import SearchBar from '../../components/customers/SearchBar';
+import { Store } from '../../data/Store.js';
 
-const Owner = ({navigation}) => {
+
+const Owner = ({route, navigation}) => {
+  const {id}= route.params;
+
+  // Filtrer les données de Store en fonction de l'ID du service sélectionné
+  const filteredData = Store.filter((data) => data.id_service === id);
+
   return (
     <ScrollView>
       <Header/>
       <SearchBar/>
-      <View style={styles.box}>
-      {Store.map((data) => (
-          <Pressable key={data.id} onPress={ () => navigation.push('Cost')}>
-            <View style={styles.flex} key={data.id}>
-              <Image style={styles.imageSize} source={data.profil}/>
-              <View style={styles.textBox} >
-                <Text style={styles.Title}>{data.title} </Text>
-                <Text style={styles.details}>{data.description} </Text>
+      <View style={styles.container}>
+        {filteredData.map((data) => (
+          <Pressable key={data.id} onPress={() => navigation.push('Cost', {id: data.id})}>
+            <View style={styles.item} key={data.id}> 
+              <Image style={styles.image} source={data.profil}/>
+              <View style={styles.textContainer}>
+                <Text style={styles.title}>{data.title} </Text>
+                <Text style={styles.description}>{data.description}</Text>
               </View>
-          </View>
-        </Pressable>
+            </View>
+          </Pressable>
         ))}
       </View>
     </ScrollView>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
-  imageSize:{
-    height:70,
-    width:70,
-    borderRadius:8
+  container: {
+    marginTop: 50,
   },
-  Title:{
-    fontSize:16,
-    color:"black",
-  },
-  details:{
-    color:"#ABA9A9",
-    fontSize:12,
-    width: 250,
-    height:30
-  },
-  flex:{
-    borderBottomWidth:1,
-    borderBlockColor:'#ABA9A9',
-    paddingLeft:20,
+  item: {
+    flexDirection: 'row',
+    alignItems: 'center',
     padding: 10,
-    flexDirection: "row",
-    flexWrap:"wrap",
+    borderBottomWidth: 1,
+    borderBottomColor: '#E5E5E5',
   },
-  textBox:{
-    margin:10,
-    marginBottom:15,
+  image: {
+    width: 70,
+    height: 70,
+    borderRadius: 8,
   },
-  box:{
-    marginTop:50
-  }
-})
+  textContainer: {
+    marginLeft: 10,
+  },
+  title: {
+    fontSize: 16,
+    color: 'black',
+  },
+  description: {
+    fontSize: 12,
+    color: '#ABA9A9',
+    width: 250,
+  },
+});
 
-
-export default Owner
+export default Owner;

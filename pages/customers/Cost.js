@@ -4,12 +4,14 @@ import  Header  from '../../components/customers/Header'
 // import SearchBar from '../../components/customers/SearchBar'
 import StoreHeader from '../../components/customers/StoreHeader'
 import { product } from '../../data/Product'
-const Cost = ({navigation}) => {
+const Cost = ({route, navigation}) => {
+  const {id} = route.params;
+  FilterData = product.filter((data) => data.id_store === id)
   return (
     <ScrollView>
       <Header/>
       <StoreHeader />
-      {product.map((data)=> (
+      {FilterData.map((data)=> (
         <View key={data.id} style={styles.Card} >
           <Image style={styles.image} source={data.image}/>
           <View style={styles.flex} >

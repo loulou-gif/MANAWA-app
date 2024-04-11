@@ -1,5 +1,6 @@
 export const product = [
     {
+        id_store:1,
         id:1,
         name:"coupe de cheveux",
         description:"une coiffure pour homme simple",
@@ -8,6 +9,7 @@ export const product = [
         image: require("../assets/images/Profils/p8.png"),
     },
     {
+        id_store:3,
         id:2,
         name:"Coupe femme",
         description:"Une coiffure simple femme",
@@ -16,6 +18,7 @@ export const product = [
         image: require("../assets/images/Profils/p3.jpg"),
     },
     {
+        id_store:3,
         id:3,
         name:"Maquillage",
         description:"Une légère teinture de couleur",
@@ -24,6 +27,7 @@ export const product = [
         image: require("../assets/images/Profils/p7.jpg"),
     },
     {
+        id_store:1,
         id:4,
         name:"coupe de cheveux",
         description:"une coiffure pour homme simple",
@@ -32,6 +36,7 @@ export const product = [
         image: require("../assets/images/Profils/p8.png"),
     },
     {
+        id_store:3,
         id:5,
         name:"Coupe femme",
         description:"Une coiffure simple femme",
@@ -40,6 +45,7 @@ export const product = [
         image: require("../assets/images/Profils/p3.jpg"),
     },
     {
+        id_store:3,
         id:6,
         name:"Maquillage",
         description:"Une légère teinture de couleur",
@@ -48,6 +54,7 @@ export const product = [
         image: require("../assets/images/Profils/p7.jpg"),
     },
     {
+        id_store:3,
         id:7,
         name:"Coupe femme",
         description:"Une coiffure simple femme",
@@ -56,6 +63,7 @@ export const product = [
         image: require("../assets/images/Profils/p3.jpg"),
     },
     {
+        id_store:3,
         id:8,
         name:"Maquillage",
         description:"Une légère teinture de couleur",
