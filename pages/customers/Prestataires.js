@@ -17,14 +17,14 @@ const Prestataire = ({navigation}) => {
       <Header/>
       <SearchBar/>
       <View style={styles.container}>
-        {Store.map((data) => (
-          <Pressable key={data.id} onPress={() => navigation.push('Cost')}>
-            <View style={styles.item} key={data.id}> 
+        {Store.map((data) => ( 
+          <Pressable key={data.id} onPress={() => navigation.push('Cost', {id: data.id})}>
+            <View style={styles.item}> 
               <Image style={styles.image} source={data.profil}/>
               <View style={styles.textContainer}>
                 <Text style={styles.title}>{data.title} </Text>
                 <Text style={styles.description}>{data.description}</Text>
-              </View>
+              </View> 
             </View>
           </Pressable>
         ))}
