@@ -15,7 +15,7 @@ const Parametres = ({navigation}) => {
       <InfoStoreBare navigation={navigation}/>
       <View style={styles.stat}>
         <View style={styles.flex}>
-          <Text style={styles.line}>Total Prestation: </Text>
+          <Text style={styles.line}>Total Commande: </Text>
           <Text style={styles.lines}>30</Text> 
         </View>
         <View style={styles.flex}>
@@ -23,13 +23,13 @@ const Parametres = ({navigation}) => {
           <Text style={styles.lines}>30</Text> 
         </View>
         <View style={styles.flex}>
-          <Text style={styles.line}>Best seller: </Text>
+          <Text style={styles.line}>Manawa de coeur: </Text>
           <Text style={styles.lines}> Coupe d'homme</Text> 
         </View>
-        <View style={styles.flex}>
+        {/* <View style={styles.flex}>
           <Text style={styles.line}>Note Globale: </Text>
           <Text style={styles.lines}><IconeFontAwesome name='star' size={18}color="#DE9F42"/><IconeFontAwesome name='star' size={18}color="#DE9F42"/><IconeFontAwesome name='star' size={18}color="#DE9F42"/><IconeFontAwesome name='star' size={18}color="#DE9F42"/><IconeFontAwesome name='star' size={18}color="#DE9F42"/>  </Text> 
-        </View>
+        </View> */}
       </View>
       <View style={styles.Parametres}>
         <View style={styles.flex}>
