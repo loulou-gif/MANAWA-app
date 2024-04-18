@@ -1,82 +1,88 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
-import Header from '../../components/customers/Header' 
+import Header from '../../components/customers/Header'
+import InfoStoreBare from '../../components/customers/InfoStoreBar'
+import IconeFontAwesome from 'react-native-vector-icons/FontAwesome'
+import IconeFontAwesome5 from 'react-native-vector-icons/FontAwesome5'
+import IconeMaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import IconeEntypo from 'react-native-vector-icons/Entypo'
+import IconeAntDesign from 'react-native-vector-icons/AntDesign'
 
-const Parametres = () => {
+const Parametres = ({navigation}) => {
   return (
-    <View >
-      <Header/>
-      <View style={styles.body}>
-        <View style={styles.circle}>
-          <Text style={styles.initial}>JK</Text>
+    <View>
+      <Header navigation={navigation}/>
+      <InfoStoreBare navigation={navigation}/>
+      <View style={styles.stat}>
+        <View style={styles.flex}>
+          <Text style={styles.line}>Total Prestation: </Text>
+          <Text style={styles.lines}>30</Text> 
         </View>
-        <View style={styles.info}>
-          <Text style={styles.name} >Julius Konan</Text>
-          <Text style={styles.details} >ID Client: 5475623</Text>
-          <Text style={styles.details} >Contact: +225 07 87 329 780 </Text>
+        <View style={styles.flex}>
+          <Text style={styles.line}>Total transaction: </Text>
+          <Text style={styles.lines}>30</Text> 
+        </View>
+        <View style={styles.flex}>
+          <Text style={styles.line}>Best seller: </Text>
+          <Text style={styles.lines}> Coupe d'homme</Text> 
+        </View>
+        <View style={styles.flex}>
+          <Text style={styles.line}>Note Globale: </Text>
+          <Text style={styles.lines}><IconeFontAwesome name='star' size={18}color="#DE9F42"/><IconeFontAwesome name='star' size={18}color="#DE9F42"/><IconeFontAwesome name='star' size={18}color="#DE9F42"/><IconeFontAwesome name='star' size={18}color="#DE9F42"/><IconeFontAwesome name='star' size={18}color="#DE9F42"/>  </Text> 
         </View>
       </View>
-      <View style={styles.settings}>
-        <Text style={styles.menu_text}>Modifier mon compte</Text>
-        <Text style={styles.menu_text}>Bonus et réductions</Text>
-        <Text style={styles.menu_text}>Devenir Manawa</Text>
-        <Text style={styles.menu_text}>Qui sommes nous?</Text>
-        <Text style={styles.menu_text}>FAQ</Text>
+      <View style={styles.Parametres}>
+        <View style={styles.flex}>
+         <Text style={styles.options}><IconeFontAwesome5 name='user-edit' size={24}/> Modifier mon compte</Text>
+        </View>
+        <View style={styles.flex}>
+         <Text style={styles.options}><IconeEntypo name="price-ribbon" size={24}/> Bonus et reduction</Text>
+        </View>
+        <View style={styles.flex}>
+        <Text style={styles.options}><IconeAntDesign name='customerservice' size={24}/> Services clients</Text>
+        </View>
+        <View style={styles.flex}>
+          <Text style={styles.options}><IconeMaterialCommunityIcons name='logout' size={24}/> Déconnexion</Text>
+        </View>
       </View>
     </View>
   )
 }
 
-const styles = StyleSheet.create({
-  circle:{
-    width:100,
-    height:100,
-    borderRadius:50,
-    backgroundColor:"#7A4D09",
-    // marginTop:50,
-    // marginLeft:20,
-  },
-  initial:{
-    fontSize:30,
-    color:"#fff",
-    textAlign:'center',
-    // alignContent:'center',
-    alignItems:'center',
-    marginTop:30
-  },
-  body:{
-    marginLeft:10,
-    marginTop:100,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  info:{
-    width:250,
-    height:80,
-    marginLeft:30,
-    fontSize:50
-  },
-  name:{
-    fontSize:30,
-    color:"#47300D",
-    marginBottom:5,
-  },
-  details:{
-    fontSize:16,
-    color:"#8C8B8B"
-  },
-  settings:{
-    marginLeft:20,
-    marginTop:30
-  },
-  menu_text:{
-    fontSize:25,
-    color:'#47300D',
-    // height:21,
+const styles  = StyleSheet.create({
+  stat:{
     marginTop:10,
-    marginBottom:20
+    width:400,
+    borderBottomWidth:1,
+    borderColor:'#D9D9D9'
+  },
+  line:{
+    margin:10,
+    fontSize:20,
+    color:'#47300D',
+    width:180,
+    paddingLeft:10,
+  },
+  lines:{
+    margin:10,
+    fontSize:18,
+    color:'#8C8B8B',
+    width:180,
+    textAlign:'right',
+    paddingRight:20,
+  },
+  flex:{
+    flexDirection:'row',
+  },
+  Parametres:{
+    marginTop:10,
+    width:400,
+  },
+  options:{
+    margin:10,
+    fontSize:20,
+    color:'#47300D',
+    marginLeft:20
   }
 })
 
