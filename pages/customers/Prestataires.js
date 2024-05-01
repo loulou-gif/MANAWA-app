@@ -1,75 +1,65 @@
-import React, { useState } from 'react';
-import { View, Text, Pressable, ImageBackground, StyleSheet, ScrollView } from 'react-native';
-import Header from '../../components/customers/Header.js';
-import SearchBar from '../../components/customers/SearchBar.js';
-import { services } from '../../data/services';
+import React from 'react';
+import { View, Text, Image, StyleSheet, Pressable, ScrollView } from 'react-native';
+import Header from '../../components/customers/Header';
+import SearchBar from '../../components/customers/SearchBar';
+import { Store } from '../../data/Store.js';
 
-const Manawa = ({ navigation }) => {
-  const [searchPhrase, setSearchPhrase] = useState("");
 
-  // Fonction de filtrage
-  const filterData = (data, searchTerm) => {
-    return data.filter(item =>
-      item.name.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-  };
+const Prestataire = ({navigation}) => {
+//   const {id}= route.params;
 
-  // Données filtrées
-  const filteredServices = searchPhrase ? filterData(services, searchPhrase) : services;
-
-  // Fonction de gestion de la recherche
-  const handleSearch = (text) => {
-    setSearchPhrase(text);
-  };
+  // Filtrer les données de Store en fonction de l'ID du service sélectionné
+//   const filteredData = Store.filter((data) => data.id_service === id || data.id === data.id);
 
   return (
     <ScrollView>
-      <Header />
-      <SearchBar searchPhrase={searchPhrase} setSearchPhrase={setSearchPhrase} onChangeText={handleSearch} />
-      <View style={styles.center}>
-        {filteredServices.map((data) => (
-          <ImageBackground key={data.id} style={styles.Card} source={data.image}>
-            <Pressable onPress={() => navigation.navigate('Owner', { id: data.id })}>
-              <View style={styles.titleBox}>
-                <Text style={styles.title}>{data.name}</Text>
-              </View>
-            </Pressable>
-          </ImageBackground>
+      <Header/>
+      <SearchBar/>
+      <View style={styles.container}>
+        {Store.map((data) => ( 
+          <Pressable key={data.id} onPress={() => navigation.push('Cost', {id: data.id})}>
+            <View style={styles.item}> 
+              <Image style={styles.image} source={data.profil}/>
+              <View style={styles.textContainer}>
+                <Text style={styles.title}>{data.title} </Text>
+                <Text style={styles.description}>{data.description}</Text>
+              </View> 
+            </View>
+          </Pressable>
         ))}
       </View>
     </ScrollView>
   );
-}
+};
 
 const styles = StyleSheet.create({
-  Card: {
-    width: 300,
-    height: 150,
-    borderRadius: 8,
-    shadowColor: "black",
-    boxShadow: 20,
-    resizeMode: "cover",
-    marginTop: 20,
+  container: {
+    marginTop: 50,
   },
-  center: {
-    alignItems: "center",
-    marginBottom: 20
+  item: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: '#E5E5E5',
+  },
+  image: {
+    width: 70,
+    height: 70,
+    borderRadius: 8,
+  },
+  textContainer: {
+    marginLeft: 10,
   },
   title: {
-    fontSize: 20,
-    color: "#fff",
-    marginLeft: 10,
-    opacity: 1
+    fontSize: 16,
+    color: 'black',
   },
-  titleBox: {
-    justifyContent: "center",
-    backgroundColor: "#7A4D09",
-    opacity: 0.8,
-    width: 300,
-    height: 40,
-    marginTop: 110,
-    borderBottomEndRadius: 8
-  }
+  description: {
+    fontSize: 12,
+    color: '#ABA9A9',
+    width: 250,
+  },
 });
 
-export default Manawa;
+export default Prestataire;

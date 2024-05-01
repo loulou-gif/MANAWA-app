@@ -1,12 +1,25 @@
 import { View, Text, Pressable, Image, StyleSheet, ScrollView } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import  Header  from '../../components/customers/Header'
 // import SearchBar from '../../components/customers/SearchBar'
 import StoreHeader from '../../components/customers/StoreHeader'
 import { product } from '../../data/Product'
+import DateTimePicker from '@react-native-community/datetimepicker';
 const Cost = ({route, navigation}) => {
+  const [date, setDate] = useState(new Date())
+  const [showPicker, setShowPicker] = useState(false)
   const {id} = route.params;
   FilterData = product.filter((data) => data.id_store === id)
+
+  const onChange = (event, updateDate) =>{
+    const currentDate = updateDate || date;
+    setShowPicker(false),
+    setDate(currentDate)
+  }
+
+  const showDataPicker =()=>{
+    setShowPicker(true)
+  }
   return (
     <ScrollView>
       <Header/>
@@ -21,10 +34,21 @@ const Cost = ({route, navigation}) => {
             </View>
             <View style={styles.space} >
               <Text  style={styles.price}>{data.price}</Text>
-              <Pressable style={styles.bouton} onPress={() => navigation.push("booking")}>
+              <Pressable style={styles.bouton} onPress={showDataPicker}>
                 <Text style={styles.value} >Réserver</Text>
               </Pressable>
             </View>
+            {showPicker && (
+              <DateTimePicker
+                testID="dateTimePicker"
+                value={date}
+                mode="date"
+                is24Hour={true}
+                display="default"
+                onChange={onChange}
+                style={{backgroundColor: "#47300D", color:'white'}}
+              />
+            )}
           </View>
         </View>
       ))}
